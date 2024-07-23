@@ -14,10 +14,10 @@ body {
 }
 
 .kinetic {
-  position: absolute; /* Đổi thành absolute */
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Đưa phần tử vào giữa màn hình */
+  transform: translate(-50%, -50%);
   height: 800px;
   width: 800px;
   align-items: center;

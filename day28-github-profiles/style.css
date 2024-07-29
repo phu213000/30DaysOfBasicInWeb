@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Đảm bảo font được tải đúng từ Google Fonts */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2a2a72;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px; /* Kiểm tra nếu muốn giới hạn rộng hơn trên các màn hình lớn hơn */
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1); /* Kiểm tra hiển thị của bóng đổ */
+}
+
+.user-form input::placeholder {
+  color: #bbb; /* Đảm bảo màu placeholder hiển thị tốt trên nền */
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.card {
+  max-width: 800px;
+  background-color: #4c2885;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1); /* Kiểm tra hiển thị của bóng đổ */
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem; /* Có thể điều chỉnh margin nếu cần thêm khoảng trống */
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 10px solid #2a2a72;
+  height: 150px; /* Đảm bảo kích thước hợp lý với ảnh đại diện */
+  width: 150px; /* Đảm bảo kích thước hợp lý với ảnh đại diện */
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem; /* Kiểm tra khoảng cách giữa ảnh đại diện và thông tin user */
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between; /* Kiểm tra sự phân bố khoảng cách giữa các mục */
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center; /* Đảm bảo các mục nằm cùng một hàng */
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem; /* Điều chỉnh kích thước font nếu cần thiết */
+  margin-left: 0.5rem; /* Kiểm tra khoảng cách giữa text và số liệu */
+}
+
+.repo {
+  text-decoration: none;
+  color: white;
+  background-color: #212a72;
+  font-size: 0.7rem; /* Kiểm tra kích thước font của các repo link */
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block; /* Đảm bảo các liên kết repo hiển thị đúng */
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column; /* Đảm bảo card hiển thị theo cột trên màn hình nhỏ */
+    align-items: center; /* Căn giữa các phần tử trong card */
+  }
+
+  .user-form {
+    max-width: 400px; /* Điều chỉnh kích thước form trên màn hình nhỏ */
+  }
+}
